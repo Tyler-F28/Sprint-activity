@@ -291,7 +291,10 @@ Once your code is ready, you can host it for free using GitHub Pages.
    *(It may take up to 10 minutes to appear.)*
 
 ---
-
+how to commit
+https://www.youtube.com/watch?v=OVfptJqx_RI
+how to open live pages
+https://www.youtube.com/watch?v=e5AwNU3Y2es
 ## 6 Things to Remember
 
 1. **The Title Link:** Google uses the `<title>` element and headings to generate the clickable headline.
