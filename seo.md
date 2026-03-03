@@ -81,15 +81,7 @@ Accessibility ensures your site is **Operable** and **Perceivable** for everyone
 </style>
 <!--new portion-->
 
-<head>
-    <title>Organic Coffee Beans | RoastMaster City Hub</title>
-    <meta name="description" content="Shop premium organic coffee beans sourced from sustainable farms. Fast delivery and brewing guides for every coffee lover.">
-</head>
-<body>
-    <h1>Premium Organic Coffee Beans</h1>
-    <img src="coffee-logo.png" alt="RoastMaster logo featuring a steaming coffee cup and green leaves">
-    <p>Explore our sustainable selection in our <a href="store.html">online coffee bean store</a>.</p>
-</body>
+<!-- Old Code here-->
 
 <!--new portion-->
 <div class="accessible-text">
@@ -108,6 +100,7 @@ Accessibility ensures your site is **Operable** and **Perceivable** for everyone
 - Ensuring text is properly legible, and color contrasts are easy on the eyes
 - Ensuring that images/media has alt text, both for SEO as well as accessibility
 - Using `aria-label` on interactive parts of your site, like buttons, to help accessibility.
+- Example of `aria-label`: `aria-label="Close"`
 
 ### Explanation
 - High **color contrast** improves readability for users with low vision.
@@ -155,113 +148,6 @@ Once your code is ready, you can host it for free using GitHub Pages.
 6. **GitHub Pages Setup:** Personal sites must use the `username.github.io` repository name.
 ---
 =======
----
-
-# Tutorial: SEO, Accessibility, and Deployment Masterclass
-
-This tutorial will guide you through building a high-quality web page that is optimized for search engines, accessible to all users, and live on the internet.
-
----
-
-## Phase 1: SEO Basics (The "Before and After")
-
-Search Engine Optimization (SEO) helps search engines understand your content so users can find your site. We start by fixing a "bad" page that lacks context.
-
-### The "Bad" Example
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Page</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-    <img src="logo.png">
-    <p>Check out our products <a href="store.html">click here</a>.</p>
-</body>
-</html>
-```
-
-### Explanation
-This page has several issues:
-
-- The `<title>` is too vague for Google to create a useful "title link".
-- There is no `<meta description>`.
-- The image has no `alt` text.
-- The link text ("click here") doesn't describe the destination.
-
-### The "Fixed" SEO Example
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Organic Coffee Beans | RoastMaster City Hub</title>
-    <meta name="description" content="Shop premium organic coffee beans sourced from sustainable farms. Fast delivery and brewing guides for every coffee lover.">
-</head>
-<body>
-    <h1>Premium Organic Coffee Beans</h1>
-    <img src="coffee-logo.png" alt="RoastMaster logo featuring a steaming coffee cup and green leaves">
-    <p>Explore our sustainable selection in our <a href="store.html">online coffee bean store</a>.</p>
-</body>
-</html>
-```
-
-### Explanation
-- The `<title>` is now unique, clear, and concise.
-- The **meta description** provides a short summary that Google may use as a snippet.
-- The image includes **alt text** for accessibility and SEO.
-- The link text is descriptive and meaningful out of context.
-
----
-
-## Phase 2: Accessibility
-
-Accessibility ensures your site is **Operable** and **Perceivable** for everyone, including those using screen readers or keyboard-only navigation.
-
-### Accessibility Example
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<!--new portion-->
-<style>
-    /* Color Contrast: Ensuring text stands out against the background */
-    .accessible-text {
-        color: #222222; /* Dark grey */
-        background-color: #FFFFFF; /* White */
-        /* Ratio is well above the 4.5:1 requirement for normal text */
-    }
-</style>
-<!--new portion-->
-
-<head>
-    <title>Organic Coffee Beans | RoastMaster City Hub</title>
-    <meta name="description" content="Shop premium organic coffee beans sourced from sustainable farms. Fast delivery and brewing guides for every coffee lover.">
-</head>
-<body>
-    <h1>Premium Organic Coffee Beans</h1>
-    <img src="coffee-logo.png" alt="RoastMaster logo featuring a steaming coffee cup and green leaves">
-    <p>Explore our sustainable selection in our <a href="store.html">online coffee bean store</a>.</p>
-</body>
-
-<!--new portion-->
-<div class="accessible-text">
-    <h2>Contact Us</h2>
-    <!-- aria-label provides a label for screen readers when visible text isn't enough -->
-    <button aria-label="Send an email to support" onclick="location.href='mailto:support@example.com'">
-        Email Now
-    </button>
-</div>
-<!--new portion-->
-
-</html>
-```
-
-### Explanation
-- High **color contrast** improves readability for users with low vision.
-- The `aria-label` gives screen readers a clear description of the button’s purpose.
-- Tools like the **Accessibility Inspector** help verify structure, contrast, and keyboard navigation.
-
 ---
 
 ## Phase 3: Deploying to GitHub Pages
@@ -330,4 +216,3 @@ In order to enable pages and live urls you must,
 2. you then select the go live option in the bottom right hand corner of the screen.
 
 3. this will open the page in your perferred browser and this will also reflect any changes made in vs code in the webpage.
->>>>>>> 81076cd86b6c4ab9ca494786d2ccbd38cd94def2
