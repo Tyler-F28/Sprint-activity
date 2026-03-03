@@ -39,21 +39,6 @@ This page has several issues:
 -  The `<img>` tag lacks an `alt` attribute. If the image fails to load or a visually impaired person uses a screen reader, the context is lost.
 - `` "Click here"`` is the ultimate SEO sin. It provides no topical relevance to the linked store.html.
 
-### The "Fixed" SEO Example
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Organic Coffee Beans | RoastMaster City Hub</title><!--fixed1-->
-    <meta name="description" content="Shop premium organic coffee beans sourced from sustainable farms. Fast delivery and brewing guides for every coffee lover."><!--fixed2-->
-<body>
-    <h1>Premium Organic Coffee Beans</h1>
-    <img src="coffee-logo.png" alt="RoastMaster logo featuring a steaming coffee cup and green leaves"><!--fixed3-->
-    <p>Explore our sustainable selection in our <a href="store.html">online coffee bean store</a>.</p><!--fixed4-->
-</body>
-</html>
-```
-
 ### Explanation
 - The `<title>` Use descriptive keywords, like "Organic Coffee Beans | RoastMaster City Hub. now this more unique, clear, and concise.
 - The **meta description** provides a short summary that Google may use as a snippet.
